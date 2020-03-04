@@ -16,6 +16,7 @@ gulp.task('server', function () {
 gulp.task('style', function() {
      return gulp.src("src/sass/*.scss")
           .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+          .pipe(autoprefixer())
           .pipe(gulp.dest("src/css"))
           .pipe(browserSync.stream());
 });

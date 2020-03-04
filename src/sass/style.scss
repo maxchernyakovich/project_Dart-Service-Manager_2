@@ -1,0 +1,54 @@
+// ===FONT
+$font-open: 'Raleway', sans-serif;
+
+// ===FONT-SIZE
+$fs15: 1.5rem;
+$fs20: 2rem; 
+$fs45: 4.5rem; 
+$fs55: 5.5rem; 
+
+// ===COLOR 
+$bg-color: #ffffff;
+$bg-footer: #061e37;
+$light-blue: #80d8ff;
+$blue: #82b1ff;
+$purple: #b388ff;
+$pink: #ea80fc;
+$btn-green: #1de9b6;
+$btn-dark-blue: #061e37;
+$btn-white: #ffffff;
+$text-black: #061e37;
+$text-white: #fff;
+
+// ===SETTINGS
+
+html {
+    font-size: 10px;
+}
+
+body {
+	margin: 0;
+     font-family: $font-open;
+     font-size: 1.5rem;
+     color: $text-black;
+     background-color: $bg-color;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+a {
+     text-decoration: none;
+}
+
+p {
+	margin: 0;
+}
+
