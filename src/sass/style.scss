@@ -17,7 +17,7 @@ $pink: #ea80fc;
 $btn-green: #1de9b6;
 $btn-dark-blue: #061e37;
 $btn-white: #ffffff;
-$text-black: #061e37;
+$text-black: #000000;
 $text-white: #fff;
 
 // ===SETTINGS
@@ -51,4 +51,35 @@ a {
 p {
 	margin: 0;
 }
+
+// ===CONTAINER
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+// ===BTN 
+
+.btn {
+     padding: 2rem 3rem;
+     font-family: $font-open;
+     font-size: $fs15;
+     font-weight: 700;
+     text-transform: uppercase;
+     color: $btn-dark-blue;
+     background-color: $btn-white;
+     border: none;
+     border-radius: .5rem;
+     cursor: pointer;
+     transition: background-color .2s linear;
+
+     &:hover {
+          color: $btn-white;
+          background-color: $btn-dark-blue;
+     }
+
+}
+
 
