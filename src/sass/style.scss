@@ -44,7 +44,8 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
-a {
+a {  
+     color: $text-white;
      text-decoration: none;
 }
 
@@ -63,7 +64,7 @@ p {
 // ===BTN 
 
 .btn {
-     padding: 2rem 3rem;
+     padding: 2rem 4rem;
      font-family: $font-open;
      font-size: $fs15;
      font-weight: 700;
@@ -73,7 +74,7 @@ p {
      border: none;
      border-radius: .5rem;
      cursor: pointer;
-     transition: background-color .2s linear;
+     transition: background-color .2s linear, color .2s linear;
 
      &:hover {
           color: $btn-white;
@@ -82,4 +83,71 @@ p {
 
 }
 
+// ===HEADER
 
+.header {
+     background-image: url(../img/header/header-img.png);
+     width: auto;
+     height: 75rem;
+     padding-top: 5rem;
+
+     .nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          &__logo {
+               display: flex;
+
+               &--text {
+                    margin-left: 1rem;
+                    font-size: $fs15;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    transition: color .5s linear;
+                    &:hover {
+                         color: $btn-dark-blue;
+                    }
+               }
+          }
+
+          &__link {
+               display: flex;
+               align-items: center;
+
+               &--a {
+                    margin-right: 5rem;
+                    font-size: $fs15;
+                    font-weight: 600;
+                    transition: color .2s linear;
+                    &:hover {
+                         color: $btn-dark-blue;
+                    }
+                    &:last-child {
+                         margin-right: 0;
+                    }
+               }
+          }
+
+          &__btn {
+               padding: .5rem 2rem;
+               font-size: $fs15;
+               font-weight: 400;
+               color: $btn-white;
+               background-color: rgba(0, 50, 50, 0);
+               border: 0.2rem solid $bg-color;
+               cursor: pointer;
+               transition: border-color .2s linear, color .2s linear;
+              // transition: border-color .2s linear;
+
+               &:hover {
+                    color: $btn-dark-blue;
+                    border-color: $btn-dark-blue;
+               }
+          }
+     }
+
+     .intro {
+          margin-top: 17rem;
+     }
+}
