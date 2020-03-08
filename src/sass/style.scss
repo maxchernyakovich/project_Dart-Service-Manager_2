@@ -148,6 +148,44 @@ p {
      }
 
      .intro {
+          display: flex;
+          justify-content: space-between;
           margin-top: 17rem;
+
+          &__title {
+               margin-bottom: 3rem;
+               font-size: $fs55;
+               font-weight: 800;
+               line-height: 6.5rem;
+               color: $text-white;
+               text-transform: uppercase;
+          }
+
+          &__subtitle {
+               margin-bottom: 4rem;
+               font-size: $fs20;
+               font-weight: 400;
+               line-height: 3.5rem;
+               color: $text-white;
+          }
+
+          &__btn {
+               margin-right: 3rem;
+
+               &:last-child {
+                   margin-right: 0; 
+               }
+          }
+
+          &__video {
+               border: 3px solid $btn-white;
+               border-radius: .5rem;
+               transition: border-color .2s linear;
+
+               &:hover {
+                    border-color: $btn-dark-blue;
+               }
+          }
+
      }
 }
