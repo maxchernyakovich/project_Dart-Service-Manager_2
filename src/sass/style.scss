@@ -19,6 +19,8 @@ $btn-dark-blue: #061e37;
 $btn-white: #ffffff;
 $text-black: #000000;
 $text-white: #fff;
+$text-grey: #b0bec5;
+$text-darkblue: #061e37;
 
 // ===SETTINGS
 
@@ -91,6 +93,8 @@ p {
      height: 75rem;
      padding-top: 5rem;
 
+     // ===NAV
+
      .nav {
           display: flex;
           justify-content: space-between;
@@ -147,6 +151,8 @@ p {
           }
      }
 
+     // ===INTRO
+
      .intro {
           display: flex;
           justify-content: space-between;
@@ -189,3 +195,128 @@ p {
 
      }
 }
+
+// ===MAIN
+
+.main {
+     margin-top: 10rem;
+     background-color: $bg-color;
+
+     // ===EASY
+
+     .easy {
+          text-align: center;
+
+          &__title {
+               margin-bottom: 1.5rem;
+               font-size: $fs45;
+               font-weight: 600;
+               text-align: center;
+               color: $text-darkblue;
+          }
+
+          &__subtitle {
+               margin-bottom: 10rem;
+               font-size: $fs15;
+               font-weight: 400;
+               text-align: center;
+               line-height: 2.5rem;
+               color: $text-grey;
+
+               &--project {
+                    font-size: $fs20;
+                    font-weight: 600;
+               }
+          }
+
+          &__content {
+               display: flex;
+               justify-content: space-between;
+               text-align: center;
+
+               .easy__block {
+                    
+                    &--img {
+                         margin-bottom: 2rem;
+                    }
+
+                    &--title {
+                         margin-bottom: 2rem;
+                         font-size: $fs20;
+                         font-weight: 600;
+                         color: $text-darkblue;
+                    }
+
+                    &--subtitle {
+                         font-size: $fs15;
+                         font-weight: 400;
+                         line-height: 2rem;
+                         color: $text-grey;
+                    }
+               }
+          }
+
+          &__btn {
+               margin-top: 8rem;
+               margin-bottom: 10rem;
+               background-color: $btn-green;
+               color: $text-white;
+               border: .2rem solid $btn-green;
+
+               &:hover {
+                    background-color: $btn-white;
+                    color: $text-darkblue;
+                    border: .2rem solid $btn-dark-blue;
+               }
+          }
+
+          &__bottom {
+               display: flex;
+               justify-content: center;
+
+               .easy__color {
+                    height: 15rem;
+                    display: flex;
+                    width: 33%;
+                    justify-content: center;
+                    font-size: $fs20;
+                    font-weight: 800;
+                    color: $text-white;
+
+                    &--img {
+                         padding: 4rem 0;
+                    }
+
+                    &--text {
+                         text-align: left;
+                         padding: 5rem 1rem;
+                    }
+               }
+
+               .easy__color1 {
+                    background-color: $light-blue;
+               }
+
+               .easy__color2 {
+                    background-color: $blue;
+               }
+
+               .easy__color3 {
+                    background-color: $purple;
+               }
+
+               .easy__color4 {
+                    background-color: $pink;
+               }
+          }
+
+     }
+
+     // === SERVICES
+
+     
+
+}
+
+
+
