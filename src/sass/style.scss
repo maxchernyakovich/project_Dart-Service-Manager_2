@@ -335,6 +335,55 @@ p {
                color: $text-grey;
           }
 
+          &__list {
+               width: 80rem;
+               margin: 0 auto;
+               box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+               border-radius: .5rem;
+
+               .list__title {
+                    display: flex;
+                    justify-content: left;
+                    padding: 2rem;
+                    
+                    &--text {
+                         margin-left: 4rem;
+                         /* margin-right: 67rem; */
+                         font-size: $fs15;
+                         font-weight: 700;
+                         text-transform: uppercase;
+                         color: $text-darkblue;
+                         cursor: pointer;
+                    }
+
+                    &--arrow {
+                         cursor: pointer;
+                    }
+               }
+
+               .list__dropdown {
+
+                    &--item {
+                         display: flex;
+                         justify-content: left;
+
+                         img {
+                              width: 25rem;
+                              height: 16rem;
+                              margin: 2rem;
+                         }
+
+                         p {
+                              text-align: left;
+                              margin-top: 2rem;
+                              font-size: $fs15;
+                              font-weight: 400;
+                              line-height: 2.5rem;
+                              color: $text-darkblue;
+                         }
+                    }
+               }
+          }
      }
 
      // ===ABOUT
